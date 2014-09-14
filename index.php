@@ -97,7 +97,7 @@
         });
     </script>
 	<div id="footer">
-		<a href="http://edoscorp.heliohost.org/xat/">Demo</a> | <a href="https://trello.com/b/WpXaAi9x/xat">Docu</a>
+		<a href="https://github.com/edos4/xat">Code</a> | <a href="https://trello.com/b/WpXaAi9x/xat">Docu</a>
 	</div>
 </body>
 
