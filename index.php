@@ -5,6 +5,8 @@
 <html>
 <head>
     <meta charset="utf-8" />
+	<link href="css/pace.css" rel="stylesheet" />
+	<script src="js/pace.min.js"></script>
     <title><?php echo title;?></title>
     <link href="css/jquery.terminal.css" rel="stylesheet" />
 	<link href="css/theme.css" rel="stylesheet" />
