@@ -6,11 +6,6 @@
 <head>
     <meta charset="utf-8" />
     <title><?php echo title;?></title>
-    <script src="js/jquery1.11.js"></script>
-    <script src="js/jqueryui.js"></script>
-    <script src="js/jquery.mousewheel-min.js"></script>
-    <script src="js/jquery.terminal-min.js"></script>
-	<script src="js/passwordPrompt.js"></script>
     <link href="css/jquery.terminal.css" rel="stylesheet" />
 	<link href="css/theme.css" rel="stylesheet" />
 	<link rel="icon" type="image/ico" href="favicon.ico"/>
@@ -24,6 +19,11 @@
         <br>
         <div id="termDiv"></div>
     </div>
+    <script src="js/jquery1.11.js"></script>
+    <script src="js/jqueryui.js"></script>
+    <script src="js/jquery.mousewheel-min.js"></script>
+    <script src="js/jquery.terminal-min.js"></script>
+	<script src="js/passwordPrompt.js"></script>
     <script>
         jQuery(document).ready(function($) {
 		    var id = 1;
