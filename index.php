@@ -99,7 +99,7 @@
         });
     </script>
 	<div id="footer">
-		<a href="https://github.com/edos4/xat">Code</a> | <a href="https://trello.com/b/WpXaAi9x/xat">Docu</a>
+		<a href="https://github.com/edos4/xat" target="_blank">Code</a> | <a href="https://trello.com/b/WpXaAi9x/xat" target="_blank">Docu</a>
 	</div>
 </body>
 
