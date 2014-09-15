@@ -1,9 +1,10 @@
 <?php
 	include('dbConnect.php');
+	include('functions.php');
 
 	session_start();
-	$username = $_POST['username'];
-	$password = md5(NaCl.$_POST['password']);
+	$username = sanitize($_POST['username']);
+	$password = md5(NaCl.sanitize($_POST['password']));
 	$qry = "SELECT * FROM users WHERE username='".$username."' AND password='".$password."' ";
 	$res = mysql_query($qry);
 	$num_row = mysql_num_rows($res);

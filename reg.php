@@ -1,5 +1,6 @@
 <?php
 	include('dbConnect.php');
+	include('functions.php');
 
 	function isDuplicate($username){
 		$res = mysql_query("select * from users where username='$username'");
@@ -7,10 +8,10 @@
 	}
 
 	session_start();
-	$name = $_POST['name'];
-	$email = $_POST['email'];
-	$username = $_POST['username'];
-	$password = md5(NaCl.$_POST['password']);
+	$name = sanitize($_POST['name']);
+	$email = sanitize($_POST['email']);
+	$username = sanitize($_POST['username']);
+	$password = md5(NaCl.sanitize($_POST['password']));
 
 	//check for duplicates
 	if(isDuplicate($username)){
