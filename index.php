@@ -72,10 +72,10 @@
 								},
 								success: function(data){
 									if (data === 'true') {
-										term.echo("Successfully registered "+q[1]);
+										term.echo("Successfully registered "+q[1]+". ");
 									}
 									else {
-										term.error(data);
+										term.error("Error in registering "+q[1]+". ");
 									}
 								}
 							});

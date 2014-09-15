@@ -1,5 +1,7 @@
 <?php
 	include('config.php');
-	@mysql_connect(dbServer, dbUser, dbPw);
-	@mysql_select_db(dbName);
+	$mysqli = new mysqli(dbServer, dbUser, dbPw, dbName);
+	if($mysqli->connect_error) {
+	  $this->last_error = 'Cannot connect to database. ' . $mysqli->connect_error;
+	}
 ?>
